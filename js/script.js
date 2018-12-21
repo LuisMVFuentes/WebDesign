@@ -8,6 +8,12 @@ var cursos = [
     {nombre: 'DISEÑO DE EXPERIMENTOS', cred: 3, nota: 10.46}
 ];
 
+function redondeo(numero, decimales) {
+    var flotante = parseFloat(numero);
+    var resultado = Math.round(flotante * Math.pow(10, decimales)) / Math.pow(10, decimales);
+    return resultado;
+}
+
 function cargar() {
     var tabla = document.createElement('table');
     tabla = document.getElementById('cursos');
@@ -25,7 +31,7 @@ function cargar() {
             var td3 = document.createElement('td');
             td3.appendChild(document.createTextNode(cursos[i].cred));
             var td4 = document.createElement('td');
-            td4.appendChild(document.createTextNode(cursos[i].nota));
+            td4.appendChild(document.createTextNode(redondeo(cursos[i].nota, 0)));
             fila.appendChild(td1);
             fila.appendChild(td2);
             fila.appendChild(td3);
@@ -33,14 +39,15 @@ function cargar() {
             tabla.appendChild(fila);
         }
         var fila1 = document.createElement('tr');
-        var td1 = document.createElement('td');
+        fila1.setAttribute('class', 'grey white-text')
+        var td1 = document.createElement('th');
         td1.appendChild(document.createTextNode('#'));
-        var td2 = document.createElement('td');
+        var td2 = document.createElement('th');
         td2.appendChild(document.createTextNode('Promedio'));
-        var td3 = document.createElement('td');
+        var td3 = document.createElement('th');
         td3.appendChild(document.createTextNode(totalCred));
-        var td4 = document.createElement('td');
-        td4.appendChild(document.createTextNode(credxnota / totalCred));
+        var td4 = document.createElement('th');
+        td4.appendChild(document.createTextNode(redondeo((credxnota / totalCred), 0)));
         fila1.appendChild(td1);
         fila1.appendChild(td2);
         fila1.appendChild(td3);
