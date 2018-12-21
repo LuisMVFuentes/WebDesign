@@ -17,7 +17,6 @@ function cargar() {
         for (var i = 0; i < cursos.length; i++) {
             totalCred += cursos[i].cred;
             credxnota += cursos[i].cred * cursos[i].nota;
-            console.log(i);
             var fila = document.createElement('tr');
             var td1 = document.createElement('td');
             td1.appendChild(document.createTextNode(i + 1));
