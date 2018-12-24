@@ -2,7 +2,7 @@ var cursos = [
     {nombre: 'ORGANIZACION Y METODOS', cred: 3, nota: 8},
     {nombre: 'FISICA III', cred: 3, nota: 0},
     {nombre: 'SISTEMAS ELECTRICOS Y ELECTRONICOS', cred: 4, nota: 0},
-    {nombre: 'TALLER DE PROGRAMACION', cred: 3, nota: 0},
+    {nombre: 'TALLER DE PROGRAMACION', cred: 3, nota: 16},
     {nombre: 'SISTEMICA', cred: 4, nota: 9.4},
     {nombre: 'SISTEMAS PRODUCTIVOS', cred: 4, nota: 15.95},
     {nombre: 'DISENO DE EXPERIMENTOS', cred: 3, nota: 10.46}
