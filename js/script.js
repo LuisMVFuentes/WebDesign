@@ -5,7 +5,7 @@ var cursos = [
     {nombre: 'TALLER DE PROGRAMACION', cred: 3, nota: 16},
     {nombre: 'SISTEMICA', cred: 4, nota: 9.4},
     {nombre: 'SISTEMAS PRODUCTIVOS', cred: 4, nota: 15.95},
-    {nombre: 'DISENO DE EXPERIMENTOS', cred: 3, nota: 10.46}
+    {nombre: 'DISENO DE EXPERIMENTOS', cred: 3, nota: 10.71}
 ];
 
 function redondeo(numero, decimales) {
