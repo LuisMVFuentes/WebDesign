@@ -55,6 +55,7 @@ function cargar() {
         var td1 = document.createElement('th');
         td1.appendChild(document.createTextNode('#'));
         var td2 = document.createElement('th');
+        td2.setAttribute('colspan', '2');
         td2.appendChild(document.createTextNode('Promedio'));
         var td3 = document.createElement('th');
         td3.appendChild(document.createTextNode(totalCred));
